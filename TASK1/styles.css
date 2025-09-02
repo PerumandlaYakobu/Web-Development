@@ -1,0 +1,34 @@
+/* styles.css */
+body {
+  background-color: #f0f0f0;      /* light gray background */
+  color: #333;                    /* dark gray text */
+  font-family: Arial, sans-serif; /* set font family */
+  margin: 20px;                   /* margin around body */
+  padding: 20px;                  /* padding inside body */
+}
+h1 {
+  color: #4CAF50;     /* green heading text */
+  text-align: center; /* center the heading */
+  margin-bottom: 10px;
+}
+p {
+  line-height: 1.6;   /* improve paragraph readability */
+}
+img {
+  display: block;
+  margin: 20px auto;  /* center the image horizontally */
+  max-width: 50%;    /* responsive width */
+}
+a {
+  color: #1a73e8;     /* blue link color */
+}
+button {
+  background-color: #4CAF50; /* green button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;  /* center the button */
+}
