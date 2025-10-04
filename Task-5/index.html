@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Task 5 – Optimized Web App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">MyShop</div>
+    <nav>
+      <a href="#products" class="active" data-link>Products</a>
+      <a href="#cart" data-link>Cart</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Product Section -->
+    <section id="products" class="card">
+      <h2>Products</h2>
+      <div class="controls">
+        <select id="filter-category" class="select"></select>
+        <select id="sort-by" class="select">
+          <option value="default">Sort</option>
+          <option value="price-asc">Price Low → High</option>
+          <option value="price-desc">Price High → Low</option>
+        </select>
+        <input id="search" class="input" placeholder="Search products...">
+      </div>
+      <div class="products" id="products-grid"></div>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart" class="card">
+      <h2>Cart</h2>
+      <div id="cart-items"></div>
+      <div class="cart-total">Total: ₹<span id="cart-total">0</span></div>
+      <button class="btn danger" id="clear-cart">Clear Cart</button>
+    </section>
+  </main>
+
+  <footer>
+    Built for ApexPlanet Internship • Task 5 Optimized Project
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
