@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Task 4 – Full Web App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">AP</div>
+        <div>
+          <div style="font-weight:700">ApexPlanet Intern</div>
+          <div class="small muted">Full Project — Task 4</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#home" class="active" data-link>Home</a>
+        <a href="#projects" data-link>Projects</a>
+        <a href="#apps" data-link>Apps</a>
+        <a href="#contact" data-link>Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section id="home" class="hero card">
+        <div>
+          <h1>Hi — I'm <span style="color:var(--accent)">Your Name</span></h1>
+          <p class="lead">This capstone demonstrates a responsive portfolio, a To-Do app with localStorage, and a product listing with filter & sort functionality.</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <a class="btn" href="#projects" data-link>See Projects</a>
+            <a class="btn outline" href="#apps" data-link>Try Apps</a>
+          </div>
+        </div>
+        <aside>
+          <div class="card about-box">
+            <img src="https://images.unsplash.com/photo-1520975664291-5f97e7ef1f5b?q=80" alt="avatar">
+            <h3>About Me</h3>
+            <p class="small muted">Student & Intern focused on clean UI and functional web experiences.</p>
+          </div>
+        </aside>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+          <div class="project card"><h4>Portfolio Website</h4></div>
+          <div class="project card"><h4>To-Do App (LocalStorage)</h4></div>
+          <div class="project card"><h4>Product Listing</h4></div>
+        </div>
+      </section>
+
+      <!-- APPS -->
+      <section id="apps" class="card">
+        <h2>Apps</h2>
+        <div class="apps">
+          <!-- To-Do -->
+          <div>
+            <h3>To-Do List</h3>
+            <div class="todo card">
+              <form id="todo-form">
+                <input id="todo-input" type="text" placeholder="Add a task" required>
+                <button class="btn" type="submit">Add</button>
+              </form>
+              <div class="task-list" id="task-list"></div>
+              <div id="tasks-count" class="small muted">0 tasks</div>
+              <div>
+                <button class="btn" id="clear-done">Clear Done</button>
+                <button class="btn danger" id="clear-all">Clear All</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Products -->
+          <div>
+            <h3>Product Listing</h3>
+            <div class="controls">
+              <select id="filter-category" class="select"></select>
+              <select id="sort-by" class="select">
+                <option value="default">Sort</option>
+                <option value="price-asc">Price Low → High</option>
+                <option value="price-desc">Price High → Low</option>
+                <option value="rating-desc">Rating High → Low</option>
+              </select>
+              <input id="search" class="input" placeholder="Search">
+            </div>
+            <div class="products" id="products-grid"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="card contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+          <input name="name" placeholder="Your name" required>
+          <input name="email" type="email" placeholder="Your email" required>
+          <textarea name="message" rows="4" placeholder="Message" required></textarea>
+          <button class="btn" type="submit">Send</button>
+        </form>
+        <div id="contact-feedback" class="small muted"></div>
+      </section>
+
+      <footer>
+        Built for ApexPlanet Internship • Task 4 Full Project
+      </footer>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
